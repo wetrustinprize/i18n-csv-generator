@@ -16,7 +16,7 @@ $ npm exec i18n-csv-generator generate # Generates the locale files
 
 The configuration file is a JSON file named `i18n-csv-generator.json` at the root of your project.
 
-```json
+```jsonc
 {
     "csvFile": "./src/i18n/locale.csv", // The path to the csv file
     "delimiter": ",", // The delimiter used in the csv file
