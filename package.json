@@ -9,6 +9,7 @@
     "scripts": {
         "build": "tsup src/index.ts --format cjs,esm --dts --publicDir",
         "watch": "tsup src/index.ts --format cjs,esm --dts --publicDir --watch",
+        "release": "pnpm run build && changeset publish",
         "lint": "tsc"
     },
     "devDependencies": {
