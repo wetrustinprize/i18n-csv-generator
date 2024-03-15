@@ -26,7 +26,7 @@ const generate = () => {
 
     const csvStream = fs.createReadStream(config.csvFile, 'utf-8');
     csvStream
-        .pipe(new CsvReadableStream({}))
+        .pipe(new CsvReadableStream({ delimiter: config.delimiter }))
         .on('header', function (header) {
             const headerDisplaced = header.slice(config.offset + 1);
             languages = headerDisplaced as string[];
