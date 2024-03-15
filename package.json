@@ -2,7 +2,7 @@
     "name": "i18n-csv-generator",
     "author": "wetrustinprize",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "module": "dist/index.esm.js",
@@ -25,6 +25,7 @@
         "lint": "tsc"
     },
     "devDependencies": {
+        "@changesets/cli": "^2.27.1",
         "@types/yargs": "^17.0.32",
         "tsup": "^8.0.1",
         "typescript": "^5.3.3"
